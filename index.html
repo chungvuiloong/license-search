@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body id="body">
+    <!-- Search -->
+    <header id="headerContainer">
+      <h1>MrJay's Car Deal</h1>
+      <h1>Search for car license</h1>
+
+      <div id="searchContainer">
+        <label for="search"></label>
+        <input
+          type="text"
+          placeholder="Search for car license"
+          id="searchInput"
+        />
+        <input
+          type="button"
+          id="searchButton"
+          value="Search"
+          onclick="searchCar()"
+        />
+      </div>
+
+      <div id="carSearchResult">Testing</div>
+    </header>
+
+    <!-- input -->
+    <main>
+      <section id="carDataContainer">
+        <h1>Insert car data</h1>
+
+        <div id="testCont">
+          <label>License</label>
+          <input type="text" class="input" id="licenseInput" value="" />
+        </div>
+
+        <div id="testCont">
+          <label>Car maker</label>
+          <input type="text" class="input" id="makerInput" value="" />
+        </div>
+
+        <div id="testCont">
+          <label>Car model</label>
+          <input type="text" class="input" id="modelInput" value="" />
+        </div>
+
+        <div id="testCont">
+          <label>Car color</label>
+          <input type="text" class="input" id="colorInput" value="" />
+        </div>
+
+        <div id="testCont">
+          <label>Owner </label>
+          <input type="text" class="input" id="ownerInput" value="" />
+        </div>
+
+        <div id="testCont">
+          <label>Price </label>
+          <input type="number" class="input" id="priceInput" value="" />
+        </div>
+
+        <!-- Button =========================================================================== -->
+        <div>
+          <label>
+            <input type="button" name="submit" value="Add Cars" id="submit" />
+
+            <!-- Reset ================================================================= -->
+            <input type="button" name="reset" value="reset" id="reset" />
+          </label>
+        </div>
+      </section>
+
+      <!-- table -->
+      <section id="carTable">
+        <h1>Car Info Table</h1>
+        <table id="table" style="width: 100%">
+          <tr>
+            <td value="0">License</td>
+            <td>Car Maker</td>
+            <td>Car Model</td>
+            <td>Car Color</td>
+            <td>Car Owner</td>
+            <td>Car Price</td>
+            <td>Discount</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Audi</td>
+            <td>Speedster</td>
+            <td>Red</td>
+            <td>Jere</td>
+            <td>10000</td>
+            <td></td>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
